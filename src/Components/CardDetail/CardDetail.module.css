@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'NES Font';
+  src: url('./Pixel_NES.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.cont{
+    background-image: url('../../Assets/gif.gif'); 
+    background-size: cover;
+    
+    /* background-position: center; */
+  }
+
+.card {
+    display: flex;
+    flex-direction: row;
+    width: 40%; /* o cualquier otro ancho deseado */
+    background-color: rgba(0, 0, 0, 0.5); /* el último valor indica la opacidad */
+    margin:230px;
+    margin-left: 30%;
+    border: solid black;
+    border-radius: 55px;
+    justify-content: center;
+  }
+  
+  
+  
+  .text {
+    font-family: 'NES Font', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(200, 223, 223);
+    font-size: 25px;
+  }
+  .tex{
+    margin-bottom: 25px;
+  }
+  .impoke{
+    max-height: 500px;
+  }

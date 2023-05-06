@@ -1,0 +1,17 @@
+.searinput{
+    height: 35px;
+    border: solid 1px;
+    border-radius: 12px 0px 0px 12px;
+    width: 400px;
+    
+}
+
+.buttoninput{
+    font-size: 25px;
+    height: 35px;
+    width: 100px;
+    margin-left: 0.1em;
+    border: solid 1px;
+    border-radius: 0px 12px 12px 0px;
+    background-color: antiquewhite;
+}

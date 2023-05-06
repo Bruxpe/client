@@ -1,0 +1,65 @@
+.cont{
+    background-image: url('../../Assets/talve.webp'); 
+    background-size:cover;
+}
+.searchbar{
+    background-color: rgba(106, 114, 106, 0.5);
+    margin-right: 40%;
+    display: flex;
+    justify-content: center;
+    border: solid 4px black;
+    width: 90%;
+    
+    }
+
+    .pagina{
+        display: flex;
+        justify-content: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        z-index: 999;
+        font-size: 24px; /* Tamaño de letra */
+        color: #121010; /* Color de texto */
+    }
+
+    .filtra{
+        padding: 10px;
+        display: flex;
+        padding-left: 50px;
+        font-size: 25px;
+        font-weight: 500;   
+        
+    }
+    .opciones{
+        
+        padding-left: 30px;
+        height: 30px;
+        width: 200px;
+        color: rgb(22, 6, 6);
+        font-size: 20px;
+    }
+    .numeros{
+        text-align: center;
+        padding-right: 150px;
+        padding-left: 150px;
+    }
+    .numero{
+        margin: 2px;
+        font-size: 25px;
+    }
+    .searinput{
+        height: 35px;
+        border: solid 1px;
+        border-radius: 12px 0px 0px 12px;
+        width: 400px;
+        
+    }
+    
+    .buttoninput{
+        font-size: 25px;
+        height: 35px;
+        width: 100px;
+        margin-left: 0.1em;
+        border: solid 1px;
+        border-radius: 0px 12px 12px 0px;
+        background-color: antiquewhite;
+    }

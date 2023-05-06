@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'NES Font';
+    src: url('./Pixel_NES.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+ *{
+  justify-content: center;
+  align-items: center;
+
+
+ }
+  .contenedor{
+    
+    width: 800px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    border-radius: 15px;
+    border: solid black;
+    
+  }
+
+  .pika{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    
+    
+  }
+  .contenedor{
+    background-image: url('../../Assets/pikachu.png');
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    background-size:cover;
+
+  }
+ 
+  .pulsar{
+    
+    text-align: center;
+    font-family: 'NES Font', cursive;
+    text-decoration:none;
+    color:white;
+    font-size:30px;
+    margin: 10px ;
+    text-shadow: 3px 3px 1px rgb(10, 10, 10);
+    
+  }
+  a:hover{
+    font-size:43px;
+     transition:0.8s;
+      animation-duration:0.3s;
+     animation-name:pulsar;
+     animation-iteration-count:infinite;
+     animation-direction:alternate;
+   }
+  .fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
+  .fondo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation-name: fondo;
+    animation-duration: 15s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  .fondo img:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .fondo img:nth-child(2) {
+    animation-delay: 3s;
+  }
+  .fondo img:nth-child(3) {
+    animation-delay: 6s;
+  }
+  .fondo img:nth-child(4) {
+    animation-delay: 9s;
+  }
+  .fondo img:nth-child(5) {
+    animation-delay: 12s;
+  }
+  .fondo img:nth-child(6) {
+    animation-delay: 15s;
+  }
+  @keyframes fondo {
+    5% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes pulsar{
+    from{
+      opacity:0.5;
+    }
+   
+    to{
+      opacity:1;
+    }
+  }
+
+  .container{
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: calc(100vh - 50px);
+    
+  }
+
+  .imgx{
+    height: 250px;
+    padding-left: 50px;
+  }

@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'NES Font';
+    src: url('./Pixel_NES.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.cartita {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* background-image: url("../../Assets/pokefondo.jpg"); */
+    opacity: 100%;
+    background-size: coves;
+    background-position: center;
+    border: solid black;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+  }
+  
+  .cartita img {
+    background-image: url("../../Assets/pika1.png");
+    border: 3px solid rgb(14, 8, 8);
+    border-radius: 100px;
+    height: 200px;
+    width: 250px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  .cartita h2 {
+    text-align: center;
+    font-size: 18px;
+    margin: 5px;
+    color: rgb(8, 8, 8);
+    font-family: 'NES Font',cursive;
+    text-shadow: #691818;
+  }
+  
+  .cartita hr {
+    width: 100%;
+    border: none;
+    height: 1px;
+    margin-top: 10px;
+    background-color: #ccc;
+  }
+
+  .cartita h2, .cartita p {
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; /* sombra blanca alrededor del texto */
+}
+  
+  
+  
