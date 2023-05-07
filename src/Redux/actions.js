@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const deletePokeBd = async(id)=>{
     try {
-        const response = await axios.delete(`http://localhost:3001/pokemons/deletepoke/${id}`)
+        const response = await axios.delete(`https://api-liard-zeta.vercel.app/pokemons/deletepoke/${id}`)
         return(response)
     } catch (error) {
         
@@ -13,7 +13,7 @@ export const deletePokeBd = async(id)=>{
 
 export const getAllPokemos = () => {
     return function(dispatch) {
-        fetch("http://localhost:3001/pokemons")
+        fetch("https://api-liard-zeta.vercel.app/pokemons")
         .then(result => result.json())
         .then(data => {
             
@@ -24,7 +24,7 @@ export const getAllPokemos = () => {
 
 export const getAllTypes =()=>{
     return function(dispatch) {
-        fetch("http://localhost:3001/pokemons/tipos")
+        fetch("https://api-liard-zeta.vercel.app/pokemons/tipos")
         .then(result => result.json())
         .then(data => {
             const allTypes = ["All", ...data]; 
@@ -45,7 +45,7 @@ export const getAllTypes =()=>{
             types: postArray.types
           };
         try {
-            const response = await axios.post("http://localhost:3001/pokemons",data);
+            const response = await axios.post("https://api-liard-zeta.vercel.app/pokemons",data);
             return (response)
         } catch (error) {
             return (error);
